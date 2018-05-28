@@ -1,0 +1,29 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "my react project cli",
+  "main": "main.js",
+  "repository": "https://github.com/yifeinianshao/react-cli.git",
+  "author": "yifeinianshao 294341493@qq.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config config/webpack.dev.conf.js",
+    "build": "webpack --config config/webpack.prod.conf.js"
+  },
+  "dependencies": {
+    "react": "^16.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.1.5",
+    "style-loader": "^0.21.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  }
+}

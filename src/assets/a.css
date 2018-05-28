@@ -1,0 +1,7 @@
+body {
+  display: flex;
+  background-color: red;
+}
+.cs {
+  display: grid;
+}
