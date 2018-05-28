@@ -1,12 +1,13 @@
 const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const baseConf = require('./webpack.base.conf')
+const { port } = require('../config')
 
 module.exports = merge(baseConf, {
   mode: 'development',
   devServer: {
     compress: true,
-    port: 8080,
+    port,
     open: true
   },
   module: {

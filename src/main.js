@@ -1,4 +1,4 @@
-import './assets/a.stylus'
+import './assets/stylus/tick.styl'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import b from './b'

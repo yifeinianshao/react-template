@@ -1,8 +1,0 @@
-body {
-  display: flex;
-  background: url('./react.jpg') center center no-repeat
-}
-.cs {
-  display: grid;
-  background-color: red
-}
