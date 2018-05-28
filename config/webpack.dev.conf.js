@@ -9,6 +9,18 @@ module.exports = merge(baseConf, {
     port: 8080,
     open: true
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+      {
+        test: /\.styl(us)?$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
+      }
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html'
