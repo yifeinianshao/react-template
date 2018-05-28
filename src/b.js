@@ -3,3 +3,5 @@ async function abc() {
     console.log(123)
   }, 100)
 }
+
+export default abc
