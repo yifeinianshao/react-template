@@ -1,8 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Welcome from './pages/test'
+import { BrowserRouter } from 'react-router-dom'
+import App from './pages/app'
 
 ReactDOM.render(
-  <Welcome name="Sara"/>,
+  (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  ),
   document.getElementById('root')
 )
