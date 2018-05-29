@@ -1,23 +1,30 @@
-$border-width = 10px
+/**
+ * @Author: 张威
+ * @Date: 2018-05-29 12:00:37
+ * @Last Modified by: 张威
+ * @Last Modified time: 2018-05-29 13:50:35
+ */
+$triangle-border-width = 10px
+$triangle-color = #3c3c3c
 triangle()
   position: relative
   width: 0
   height: 0
-  border-width: $border-width
+  border-width: $triangle-border-width
   border-style: solid
 .triangleTop
   triangle()
-  top: -$border-width / 2
-  border-color: transparent transparent #3c3c3c transparent
+  top: -($triangle-border-width / 2)
+  border-color: transparent transparent $triangle-color transparent
 .triangleBottom
   triangle()
-  top: $border-width / 2
-  border-color: #3c3c3c transparent transparent transparent
+  top: ($triangle-border-width / 2)
+  border-color: $triangle-color transparent transparent transparent
 .triangleRight
   triangle()
-  left: $border-width / 2
-  border-color: transparent transparent transparent #3c3c3c
+  left: ($triangle-border-width / 2)
+  border-color: transparent transparent transparent $triangle-color
 .triangleLeft
   triangle()
-  left: -$border-width / 2
-  border-color: transparent #3c3c3c transparent transparent
+  left: -($triangle-border-width / 2)
+  border-color: transparent $triangle-color transparent transparent
